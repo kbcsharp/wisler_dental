@@ -62,12 +62,17 @@ main a {
 
 main {
   height: 600px;
-  background: url("../images/holiday_express_doctor.png") left bottom / 300px 400px no-repeat,
-              linear-gradient(0deg, #eae7e3, transparent),
+  /*background: url("../images/holiday_express_doctor.png") left bottom / 300px 400px no-repeat,*/
+  background: linear-gradient(0deg, #eae7e3, transparent),
               url("../images/DentalOfficeExample.jpg") center / cover;
-  position: relative;
+  /*position: relative;*/
   overflow: hidden;
   text-align: center;
+}
+
+main .wrap {
+  position: relative;
+  background-image: url("../images/holiday_express_doctor.png") left bottom / 300px 400px no repeat;
 }
 
 .button {
