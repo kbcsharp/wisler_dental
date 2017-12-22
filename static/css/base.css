@@ -71,8 +71,8 @@ header nav {
 header nav ul {
   overflow: hidden;
   height: 0;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  /*border-top-right-radius: 20px;
+  border-top-left-radius: 20px;*/
 }
 
 header nav ul.open {
@@ -180,9 +180,13 @@ footer img {
     padding: 0;
   }
 
+  header nav {
+    background-color: #195477;
+  }
+
   header nav ul {
     /*background-color: #1e3139;*/
-    background-color: #195477;
+    /*background-color: #195477;*/
     text-align: center;
     height: auto;
     width: 100%;
