@@ -65,12 +65,12 @@ main {
   /*background: url("../images/holiday_express_doctor.png") left bottom / 300px 400px no-repeat,*/
   background: linear-gradient(0deg, #eae7e3, transparent),
               url("../images/DentalOfficeExample.jpg") center / cover;
-  position: relative;
-  overflow: hidden;
+  /*position: relative;*/
+  /*overflow: hidden;*/
   text-align: center;
 }
 
-main .wrap {
+.wrap-main {
   overflow: hidden;
   position: relative;
   background: url("../images/holiday_express_doctor.png") left bottom / 300px 400px no-repeat;
