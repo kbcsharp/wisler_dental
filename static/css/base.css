@@ -110,6 +110,7 @@ header nav ul li a {
 }
 
 .contact-info {
+  color: #fff;
   display: none;
   float: right;
   text-align: center;
