@@ -195,7 +195,7 @@ aside img {
 @media (min-width: 767px) {
   .container {
     /*width: 90%;*/
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(50px, auto) minmax(600px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
     grid-template-areas:

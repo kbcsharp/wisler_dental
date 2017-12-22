@@ -5,14 +5,19 @@
 body {
   height: 100vh;
   background-color: #484c51;
-  max-width: 1200px;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .container {
+  width: 100%;
   background-color: #dde8f0;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: auto;
 }
 
 p {
@@ -158,6 +163,11 @@ footer img {
 @media (min-width: 767px) {
   p {
     font-size: 1.1rem;
+  }
+
+  .logo-image {
+    /*margin-top: 15px;
+    margin-bottom: 15px;*/
   }
 
   .contact-info {
