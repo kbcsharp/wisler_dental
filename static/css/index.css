@@ -167,6 +167,10 @@ aside img {
   grid-column-gap: 15px;
 }
 
+.aside-two {
+  background-color: #fff;
+}
+
 /* =======================================
       MEDIA QUERIES
 ========================================= */
@@ -174,7 +178,7 @@ aside img {
 @media (min-width: 575px) {
   .container {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(50px, auto) minmax(400px, auto) minmax(250px, auto) minmax(250px, auto) minmax(50px, auto);
+    grid-auto-rows: minmax(50px, auto) minmax(400px, auto) minmax(250px, auto) minmax(50px, auto) minmax(250px, auto) minmax(50px, auto);
     grid-template-areas:
     "header header header"
     "main main main"
