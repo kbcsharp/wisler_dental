@@ -141,11 +141,22 @@ nav a:active {
 footer {
   background-color: #657882;
   text-align: center;
+  color: #fff;
 }
 
 footer img {
   padding: 5px;
   vertical-align: middle;
+  /*height: 50px;
+  width: 50px;*/
+}
+
+.footer-content-one {
+  border-bottom: 2px solid black;
+}
+
+.footer-content-three {
+  color: black;
 }
 
 /* =======================================
@@ -155,9 +166,6 @@ footer img {
 @media (min-width: 575px) {
   header nav ul li {
     text-align: right;
-  }
-  .footer-images {
-    margin-right: 25px;
   }
 }
 
