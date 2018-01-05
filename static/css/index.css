@@ -187,7 +187,27 @@ aside img {
   border-bottom: 5px solid #e37222;
 }
 
+/*.content-one {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.content-two {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.content-three {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}*/
+
 .wrap-aside {
+  display: flex;
+  flex-direction: column;
   display: grid;
   grid-column-gap: 15px;
 }
@@ -210,6 +230,7 @@ aside img {
 
 .read-more {
   border: 3px solid #195477;
+  align-self: flex-end;
 }
 
 .aside-three {
