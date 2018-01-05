@@ -181,6 +181,16 @@ aside img {
   border-bottom: 5px solid #e37222;
 }
 
+.read-more-link {
+  text-decoration: none;
+  color: #195477;
+}
+
+.read-more-link:hover {
+  background-color: #e37222;
+  color: #fff;
+}
+
 .wrap-aside {
   /*display: flex;
   flex-direction: column;
@@ -421,15 +431,6 @@ aside img {
     padding: 0 30px 0 30px;
   }
 
-  .read-more-link {
-    text-decoration: none;
-    color: #195477;
-  }
-
-  .read-more-link:hover {
-    background-color: #e37222;
-    color: #fff;
-  }
   aside p {
     padding: 0;
   }
