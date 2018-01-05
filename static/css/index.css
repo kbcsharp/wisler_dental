@@ -88,6 +88,7 @@ main {
   position: relative;
   overflow: hidden;
   text-align: center;
+  border-top: 2px solid #e37222;
 }
 
 .main-title {
@@ -176,12 +177,12 @@ aside {
   padding-bottom: 30px;
 }
 
-aside p {
+/*aside p {
   color: #195477;
-}
+}*/
 
 aside img {
-  height: 200px;
+  height: 250px;
   width: 275px;
   border-bottom: 5px solid #e37222;
 }
@@ -195,6 +196,20 @@ aside img {
   background-color: #fff;
   text-align: center;
   /*height: 350px;*/
+}
+
+.our-team-content a {
+  color: #70c3ce;
+  text-decoration: none;
+}
+
+.our-team-content a:hover {
+  border-bottom: 3px solid #195477;
+  color: #e37222;
+}
+
+.read-more {
+  border: 3px solid #195477;
 }
 
 .aside-three {
@@ -220,7 +235,7 @@ aside img {
 
   font-size: 1rem;
 
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -236,8 +251,8 @@ aside img {
 .index-slide-3{
   animation-name: anim-3;
 }
-
-/*.index-slide-4 {
+/*
+.index-slide-4 {
   animation-name: anim-4;
 }
 
@@ -247,7 +262,7 @@ aside img {
 
 @keyframes anim-1 {
   0%, 8.3% { left: -100%; opacity: 0; }
-  8.3%,25% { left: 10%; opacity: 1; }
+  8.3%, 25% { left: 10%; opacity: 1; }
   33.33%, 100% { left: 110%; opacity: 0; }
 }
 
