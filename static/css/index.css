@@ -179,19 +179,33 @@ aside {
 
 aside img {
   height: 250px;
-  width: 275px;
+  width: 325px;
   border-bottom: 5px solid #e37222;
+}
+
+aside h4, .aside-two h4, .aside-three h4 {
+  font-size: 1.8rem;
+  color: #195477;
+}
+
+.aside-two h5 {
+  font-size: 1.5rem;
 }
 
 .read-more-link {
   text-decoration: none;
-  color: #195477;
+  color: black;
+  display: block;
+  margin: 0px 100px 25px 100px;
+  border: 1px solid #e37222;
+  /*background-color: #dde8f0;*/
 }
 
 .read-more-link:hover {
-  background-color: #e37222;
+  background-color: #195477;
   color: #fff;
   transition: all 0.6s ease;
+  border: 1px solid #195477;
 }
 
 .wrap-aside {
@@ -220,10 +234,6 @@ aside img {
   transition: all 0.6s ease;
 }
 
-.read-more {
-  border: 3px solid #195477;
-}
-
 .aside-three {
   background-color: #dde8f0;
   height: 350px;
@@ -235,6 +245,7 @@ aside img {
 .wrap-aside-three {
   margin: 0 auto;
 }
+
 
 .index-slide-1,
 .index-slide-2,
@@ -336,7 +347,10 @@ aside img {
     margin: 25px 25px 25px 25px;
     padding: 0;
   }*/
-  aside p {
+  .aside-p-content {
+    padding: 0px 100px 0px 100px;
+  }
+  .read-more-link {
     padding: 0px 100px 0px 100px;
   }
   aside img {
@@ -372,8 +386,11 @@ aside img {
   section {
     font-size: 1.2rem;
   }
-  aside p {
+  .aside-p-content {
     padding: 0px 200px 0px 200px;
+  }
+  .read-more-link {
+    margin: 0px 200px 35px 200px;
   }
   /*footer {
     text-align: right;
@@ -406,6 +423,9 @@ aside img {
   section {
     font-size: 1.5rem;
   }
+  aside {
+    text-align: left;
+  }
   aside .content-one {
     display: flex;
     flex-direction: column;
@@ -413,7 +433,7 @@ aside img {
     grid-area: content-one;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    margin-left: 15px;
+    /*margin-left: 15px;*/
     padding: 0 30px 0 30px;
   }
   aside .content-two {
@@ -432,11 +452,14 @@ aside img {
     grid-area: content-three;
     grid-column: 3 / 4;
     grid-row: 4 / 5;
-    margin-right: 15px;
+    /*margin-right: 15px;*/
     padding: 0 30px 0 30px;
   }
 
   aside p {
+    padding: 0;
+  }
+  .aside-p-content {
     padding: 0;
   }
   aside-two {
@@ -445,12 +468,22 @@ aside img {
   .wrap-aside-two {
     display: flex;
   }
+  .aside-two {
+    text-align: left;
+  }
+  .our-team-content {
+    margin-left: 20px;
+  }
   .our-team-photo img {
     height: 350px;
     width: 1225px;
   }
   .our-team-photo {
     box-shadow: inset 0 0 50px 250px #fff;
+    margin-right: 20px;
+  }
+  .read-more-link {
+    margin: 0;
   }
 
 
