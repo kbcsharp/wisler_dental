@@ -122,6 +122,7 @@ main {
 
 .button:hover {
   color: #70c3ce;
+  transition: all 0.6s ease;
 }
 
 .doctor-subtitle {
@@ -159,6 +160,7 @@ section a:visited {
 
 section a:hover {
   color: #e37222;
+  transition: all 0.6s ease;
 }
 
 .line {
@@ -189,6 +191,7 @@ aside img {
 .read-more-link:hover {
   background-color: #e37222;
   color: #fff;
+  transition: all 0.6s ease;
 }
 
 .wrap-aside {
@@ -206,13 +209,15 @@ aside img {
 }
 
 .our-team-content a {
-  color: #70c3ce;
+  color: #e37222;
   text-decoration: none;
+  border-bottom: 3px solid #195477;
 }
 
 .our-team-content a:hover {
-  border-bottom: 3px solid #195477;
-  color: #e37222;
+  border-bottom: 3px solid #e37222;
+  color: #195477;
+  transition: all 0.6s ease;
 }
 
 .read-more {

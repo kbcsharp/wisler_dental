@@ -132,6 +132,7 @@ nav a:link {
 
 nav a:hover {
   color: #70c3ce;
+  transition: all 0.6s ease;
 }
 
 nav a:active {
