@@ -82,7 +82,7 @@ main a {
 
 main {
   height: 525px;
-  background: url("../images/holiday_express_doctor.png") left bottom / 275px 375px no-repeat,
+  background: url("../images/holiday_express_doctor.png") left bottom / 250px 350px no-repeat,
               linear-gradient(0deg, #eae7e3, transparent),
               url("../images/DentalOfficeExample.jpg") center / cover;
   position: relative;
@@ -94,12 +94,6 @@ main {
 .main-title {
   margin-top: 5px;
 }
-
-/*.wrap-main {
-  overflow: hidden;
-  position: relative;
-  background: url("../images/holiday_express_doctor.png") left bottom / 300px 400px no-repeat;
-}*/
 
 .button {
   margin: auto;
@@ -125,25 +119,12 @@ main {
   transition: all 0.6s ease;
 }
 
-.doctor-subtitle {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-}
-
 section {
-  /*color: #635236;*/
-  /*border-top: 3px solid #e37222;
-  border-bottom: 3px solid #e37222;*/
   background-color: #195477;
   color: #fff;
-  /*border-top: 10px solid #195477;
-  border-bottom: 10px solid #195477;*/
   text-align: center;
   font-size: 1rem;
   height: 375px;
-  /*padding: 20px 0 20px 0;
-  margin: 10px 0px 10px 0px;*/
 }
 
 section h4 {
@@ -161,6 +142,10 @@ section a:visited {
 section a:hover {
   color: #e37222;
   transition: all 0.6s ease;
+}
+
+.wrap-section {
+  display: none;
 }
 
 .line {
@@ -198,7 +183,6 @@ aside h4, .aside-two h4, .aside-three h4 {
   display: block;
   margin: 0px 100px 25px 100px;
   border: 1px solid #e37222;
-  /*background-color: #dde8f0;*/
 }
 
 .read-more-link:hover {
@@ -209,9 +193,6 @@ aside h4, .aside-two h4, .aside-three h4 {
 }
 
 .wrap-aside {
-  /*display: flex;
-  flex-direction: column;
-  justify-content: space-between;*/
   display: grid;
   grid-column-gap: 15px;
 }
@@ -219,7 +200,6 @@ aside h4, .aside-two h4, .aside-three h4 {
 .aside-two {
   background-color: #fff;
   text-align: center;
-  /*height: 350px;*/
 }
 
 .our-team-content a {
@@ -333,6 +313,7 @@ aside h4, .aside-two h4, .aside-three h4 {
   main {
     direction: rtl;
     text-align: right;
+    height: 450px;
   }
   .main-title {
     margin-right: 25px;
@@ -343,10 +324,6 @@ aside h4, .aside-two h4, .aside-three h4 {
   .doctor-subtitle {
     margin-right: 25px;
   }
-  /*section {
-    margin: 25px 25px 25px 25px;
-    padding: 0;
-  }*/
   .aside-p-content {
     padding: 0px 100px 0px 100px;
   }
@@ -356,9 +333,6 @@ aside h4, .aside-two h4, .aside-three h4 {
   aside img {
     min-width:
   }
-  /*footer {
-    text-align: right;
-  }*/
 }
 
 @media (min-width: 767px) {
@@ -414,9 +388,6 @@ aside h4, .aside-two h4, .aside-three h4 {
   h1 {
     font-size: 4.5rem;
   }
-  /*nav a {
-    padding: 5px 8px 5px 8px;
-  }*/
   .button {
     margin-right: 250px;
   }
@@ -433,7 +404,6 @@ aside h4, .aside-two h4, .aside-three h4 {
     grid-area: content-one;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    /*margin-left: 15px;*/
     padding: 0 30px 0 30px;
   }
   aside .content-two {
@@ -452,7 +422,6 @@ aside h4, .aside-two h4, .aside-three h4 {
     grid-area: content-three;
     grid-column: 3 / 4;
     grid-row: 4 / 5;
-    /*margin-right: 15px;*/
     padding: 0 30px 0 30px;
   }
 
@@ -485,6 +454,4 @@ aside h4, .aside-two h4, .aside-three h4 {
   .read-more-link {
     margin: 0;
   }
-
-
 }

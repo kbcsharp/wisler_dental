@@ -35,7 +35,6 @@ h2 {
 h3 {
   font-family: 'Dancing Script', cursive;
   font-size: 2rem;
-  /*color: #e37222;*/
   color: #195477;
 }
 
@@ -51,7 +50,6 @@ header {
   background-color: #657882;
   text-align: center;
   border-bottom: 7px solid #195477;
-  /*border-bottom: 2px solid #70c3ce;*/
 }
 
 .nav-toggle {
