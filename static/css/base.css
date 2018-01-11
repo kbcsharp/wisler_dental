@@ -89,15 +89,12 @@ header nav ul li a {
   padding: 10px;
   font-size: 1.4rem;
   margin: 0;
-  display: block;
   text-decoration: none;
+  display: block;
 }
 
-.active {
-  color: #70c3ce;
-  /*background-color: #e37222;*/
-  background-color: #484c51;
-  /*background-color: #657882;*/
+.selected {
+  background-color: #195477;
   border-radius: 5px 15px 5px;
 }
 
@@ -124,17 +121,13 @@ header nav ul li a {
   padding: 0 15px 0 0;
 }
 
-nav a:link {
-  color: #fff;
-}
-
 nav a:hover {
   color: #70c3ce;
   transition: all 0.6s ease;
 }
 
 nav a:active {
-  color: black;
+  color: #e37222;
 }
 
 footer {
