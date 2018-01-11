@@ -68,14 +68,14 @@ main {
   margin: 0;
 }
 
-.content-two ul,
+/*.content-two ul,
 .content-three p,
 .content-four p{
   border: 3px inset;
   border-left-color: #e37222;
   border-right-color: #e37222;
   border-left-style: outset;
-}
+}*/
 
 main img {
   max-width: 100%;
@@ -101,9 +101,9 @@ section ul {
 }
 
 section {
-  margin: 5px;
   text-align: center;
-  background-color: #dde8f0;
+  /*background-color: #dde8f0;*/
+  background-color: #70c3ce;
 }
 
 section a:link {
@@ -158,13 +158,6 @@ section a:hover {
     text-align: center;
     background-color: #dde8f0;
     font-size: 1rem;
-  }
-
-  section {
-    margin: 5px 25px 5px 25px;
-  }
-  footer {
-    text-align: right;
   }
 }
 
