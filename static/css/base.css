@@ -147,7 +147,7 @@ footer img {
   border-bottom: 2px solid black;
 }
 
-.footer-content-three {
+.footer-content-three p {
   color: black;
   font-size: .8rem;
 }
@@ -203,7 +203,7 @@ footer img {
     font-size: 1rem;
     margin: 0;
     text-decoration: none;
-}
+  }
 
   .nav-toggle {
     display: none;
