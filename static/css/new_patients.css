@@ -3,6 +3,7 @@
 ========================================= */
 
 .container {
+  background-color: #195477;
   height: fill;
   display: grid;
   grid-template-columns: 1fr;
@@ -42,14 +43,28 @@ footer {
 /* =======================================
       STYLES
 ========================================= */
+.wrap-main,
+.wrap-section {
+  max-width: 1000px;
+  margin: auto;
+}
 
+.wrap-main {
+  background-color: #dde8f0;
+  padding-bottom: 45px;
+}
+
+.wrap-section {
+  background-color: #70c3ce;
+}
 main {
   height: auto;
   text-align: center;
 }
 
 .content-one {
-  margin: 45px 0px 45px 0px;
+  margin-top: 45px;
+  font-size: .71rem;
 }
 
 .subtitle {
@@ -86,7 +101,7 @@ section ul {
 section {
   text-align: center;
   /*background-color: #dde8f0;*/
-  background-color: #70c3ce;
+  /*background-color: #70c3ce;*/
 }
 
 section a:link {
@@ -145,8 +160,8 @@ section a:hover {
     font-size: 2.2rem;
   }
   .content-one {
-    margin: 45px 30px 45px 30px;
-    font-size: .95rem;
+    margin: 45px 45px 0px 45px;
+    font-size: .85rem;
   }
   .content-two,
   .content-three,
@@ -208,11 +223,13 @@ section a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 40px 0px 40px 0px;
   }
   .content-one {
     order: 1;
     flex-grow: 1;
     font-size: .9rem;
+    margin: 0px 45px 0px 45px;
   }
   .content-one-image {
     height: 400px;
@@ -223,10 +240,11 @@ section a:hover {
   .wrap-section {
     display: flex;
     justify-content: space-between;
+    padding: 40px 0px 40px 0px;
   }
-  section {
+  /*section {
     margin-top: 40px;
-  }
+  }*/
   .content-four {
     margin-right: 25px;
   }

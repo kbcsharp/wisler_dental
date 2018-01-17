@@ -52,6 +52,7 @@ main {
   background-color: white;
   margin: 0;
   padding: 0;
+  border-top: 2px solid #e37222;
 }
 
 .subtitle h2 {
@@ -117,15 +118,9 @@ section {
   .subtitle h2 {
     font-size: 2.2rem;
   }
-  footer {
-    text-align: right;
-  }
 }
 
 @media (min-width: 767px) {
-  .subtitle {
-    margin-top: 15px;
-  }
   .subtitle h2 {
     font-size: 2.7rem;
   }
