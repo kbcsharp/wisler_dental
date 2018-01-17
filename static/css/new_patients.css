@@ -50,12 +50,12 @@ footer {
 }
 
 .wrap-main {
-  background-color: #dde8f0;
+  background-color: #fff;
   padding-bottom: 45px;
 }
 
 .wrap-section {
-  background-color: #70c3ce;
+  background-color: #fff;
 }
 main {
   height: auto;
@@ -68,7 +68,7 @@ main {
 }
 
 .subtitle {
-  background-color: white;
+  background-color: #dde8f0;
   margin: 0;
   padding: 0;
   border-top: 2px solid #e37222;
