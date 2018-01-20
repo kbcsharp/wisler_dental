@@ -131,6 +131,7 @@ nav a:active {
 }
 
 footer {
+  padding-top: 25px;
   background-color: #657882;
   text-align: center;
   color: #fff;
