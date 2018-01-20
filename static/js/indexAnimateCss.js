@@ -6,7 +6,7 @@ $(document).ready(function() {
     classToAdd: "visible animated bounceInLeft",
     offset: 100
     });
-  $('.doctor-note-content h4').addClass("hidden").viewportChecker({
+  $('.h4-note').addClass("hidden").viewportChecker({
     classToAdd: "visible animate fadeInDown",
     offset: 100
     });
