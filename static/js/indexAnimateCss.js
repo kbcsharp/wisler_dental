@@ -1,10 +1,13 @@
 $(document).ready(function() {
   $('.wrap-aside').addClass("hidden").viewportChecker({
     classToAdd: "visible animated fadeInUp",
-    offset: 100
     });
   $('.wrap-aside-four').addClass("hidden").viewportChecker({
     classToAdd: "visible animated bounceInLeft",
     offset: 100
-  });
+    });
+  $('.doctor-note-content h4').addClass("hidden").viewportChecker({
+    classToAdd: "visible animate fadeInDown",
+    offset: 100
+    });
 });
