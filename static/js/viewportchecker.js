@@ -31,9 +31,11 @@
 
         this.checkElements = function(){
             // Set some vars to check with
-            var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html'),
-                viewportTop = $(scrollElem).scrollTop(),
+            var viewportTop = Math.max($('html').scrollTop(),$('body').scrollTop(),$(window).scrollTop()),
                 viewportBottom = (viewportTop + windowHeight);
+            // var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html'),
+            //     viewportTop = $(scrollElem).scrollTop(),
+            //     viewportBottom = (viewportTop + windowHeight);
 
             $elem.each(function(){
                 var $obj = $(this);
