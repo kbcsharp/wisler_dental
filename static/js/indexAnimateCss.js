@@ -7,7 +7,7 @@ $(document).ready(function() {
     offset: 100
     });
   $('.h4-note').addClass("hidden").viewportChecker({
-    classToAdd: "visible animate fadeInDown",
+    classToAdd: "visible animated fadeInDown",
     offset: 100
     });
 });
