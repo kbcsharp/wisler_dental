@@ -90,6 +90,7 @@ header nav ul li a {
   color: #fff;
   padding: 10px;
   font-size: 1.4rem;
+  font-weight: bold;
   margin: 0;
   text-decoration: none;
   display: block;
@@ -98,6 +99,7 @@ header nav ul li a {
 .selected {
   background-color: #195477;
   border-radius: 5px 15px 5px;
+  color: #70c3ce;
 }
 
 .logo-image img {
@@ -108,6 +110,7 @@ header nav ul li a {
 }
 
 .contact-info {
+  font-weight: bold;
   color: black;
   display: none;
   float: right;
@@ -126,11 +129,14 @@ header nav ul li a {
 
 nav a:hover {
   color: #70c3ce;
+  border-radius: 5px 15px 5px;
+  background-color: #195477;
   transition: all 0.6s ease;
 }
 
 nav a:active {
-  color: #e37222;
+  color: #fff;
+  border-color: #fff;
 }
 
 footer {
@@ -138,7 +144,8 @@ footer {
   background-color: #9da7ad;
   /*background-color: #657882;*/
   text-align: center;
-  color: #fff;
+  font-weight: bold;
+  color: black;
 }
 
 footer img {
@@ -153,7 +160,7 @@ footer img {
 }
 
 .footer-content-three p {
-  color: black;
+  font-weight: normal;
   font-size: .8rem;
 }
 
