@@ -7,12 +7,11 @@
   height: fill;
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+  grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
   grid-template-areas:
   "header"
   "subtitle"
   "main"
-  "section"
   "footer";
 }
 
@@ -29,10 +28,6 @@ main {
   grid-area: main;
 }
 
-section {
-  grid-area: section;
-}
-
 footer {
   grid-area: footer;
 }
@@ -45,15 +40,11 @@ main {
   text-align: center;
 }
 
-main p,
-main h3 {
-  text-align: left;
-}
-
 .wrap-main {
   background-color: #fff;
   max-width: 1000px;
   margin: auto;
+  padding-top: 35px;
 }
 
 .subtitle {
@@ -75,10 +66,10 @@ h3 {
   margin: 0;
 }
 
-.video {
+/*.video {
   width: 100%;
   height: auto;
-}
+}*/
 
 main img {
   /*margin-top: 15px;*/
@@ -92,19 +83,6 @@ main img {
   max-width: 640px;
   margin: 0 auto;
 }*/
-
-.doctor-profile {
-  text-align: center;
-}
-
-.doctor-profile ul {
-  text-align: left;
-}
-section {
-  text-align: center;
-  background-color: black;
-  /*background-color: #dde8f0;*/
-}
 
 /* =======================================
       MEDIA QUERIES
@@ -140,21 +118,29 @@ section {
   li {
     font-size: 1.1rem;
   }
-  .doctor-profile h3 {
-    text-align: center;
-  }
 }
 
 @media (min-width: 991px) {
   .container {
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(400px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
     grid-template-areas:
     "header header"
     "subtitle subtitle"
     "main main"
-    "main main"
-    "section section"
     "footer footer"
+  }
+  main {
+    text-align: left;
+  }
+  .doctor-profile {
+    display: flex;
+  }
+  .doctor-photo {
+    width: 300px;
+  }
+  .doctor-bio {
+    flex: 1;
+    margin: 50px 5px 0 5px;
   }
 }

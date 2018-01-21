@@ -47,16 +47,18 @@ img {
 }
 
 header {
-  background-color: #657882;
+  padding-top: 20px;
+  background-color: #9da7ad;
+  /*background-color: #657882;*/
   text-align: center;
   border-bottom: 7px solid #195477;
 }
 
 .nav-toggle {
   display: block;
-  height: 140px;
+  height: 120px;
   width: 100%;
-  background: url("../images/menu-button-of-three-horizontal-lines.svg") no-repeat 98% center;
+  background: url("../images/menu-button-of-three-horizontal-lines.svg") no-repeat 125% center;
   cursor: pointer;
 }
 
@@ -99,13 +101,14 @@ header nav ul li a {
 }
 
 .logo-image img {
-  max-width: 150px;
-  margin-left: 20px;
+  width: 270px;
+  height: 90px;
   float: left;
+  margin-bottom: 20px;
 }
 
 .contact-info {
-  color: #fff;
+  color: black;
   display: none;
   float: right;
   text-align: center;
@@ -132,7 +135,8 @@ nav a:active {
 
 footer {
   padding-top: 25px;
-  background-color: #657882;
+  background-color: #9da7ad;
+  /*background-color: #657882;*/
   text-align: center;
   color: #fff;
 }
@@ -157,9 +161,22 @@ footer img {
       MEDIA QUERIES
 ========================================= */
 
+@media (min-width: 400px) {
+  .nav-toggle {
+    background: url("../images/menu-button-of-three-horizontal-lines.svg") no-repeat 110% center;
+  }
+}
+
 @media (min-width: 575px) {
   header nav ul li {
     text-align: right;
+  }
+  .nav-toggle {
+    background: url("../images/menu-button-of-three-horizontal-lines.svg") no-repeat 100% center;
+  }
+  .logo-image img {
+    width: 330px;
+    height: 110px;
   }
 }
 
@@ -168,13 +185,9 @@ footer img {
     font-size: 1.1rem;
   }
 
-  .logo-image {
-    /*margin-top: 15px;
-    margin-bottom: 15px;*/
-  }
-
   .contact-info {
     display: block;
+    margin-top: 5px;
   }
 
   .nav-items {
@@ -199,7 +212,7 @@ footer img {
   }
 
   header nav ul li a {
-    color: #fff;
+    color: black;
     padding: 10px;
     font-size: 1rem;
     margin: 0;
@@ -213,5 +226,11 @@ footer img {
 }
 
 @media (min-width: 991px) {
-
+  .logo-image img {
+    width: 375px;
+    height: 125px;
+  }
+  .contact-info {
+    margin-top: 15px;
+  }
 }
