@@ -524,11 +524,12 @@ aside h4, .aside-two h4, .aside-three h4 {
     font-size: 1.3rem;
   }
   .our-team-content {
+    flex: 1;
     margin-left: 20px;
   }
   .our-team-photo img {
     height: 375px;
-    width: 1225px;
+    width: 525px;
   }
   .our-team-photo {
     box-shadow: inset 0 0 50px 250px #fff;
@@ -550,12 +551,14 @@ aside h4, .aside-two h4, .aside-three h4 {
   .doctor-note-photo {
     padding-left: 35px;
   }
-  .doctor-note-photo img {
-    height: 300px;
-    width: 2200px;
+  .doctor-note-content {
+    flex: 1;
   }
   .doctor-note-content p {
     width: 75%;
     margin: 0 auto;
+  }
+  .doctor-note-content h4 {
+    font-size: 2rem;
   }
 }
