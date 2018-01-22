@@ -84,7 +84,6 @@ main {
 
 main img {
   max-width: 100%;
-  border-bottom: 5px solid #e37222;
 }
 
 .line1,
@@ -99,6 +98,7 @@ section ul {
 }
 
 section {
+  border-bottom: 2px solid #e37222;
   text-align: center;
   /*background-color: #dde8f0;*/
   /*background-color: #70c3ce;*/
@@ -219,13 +219,13 @@ section a:hover {
     "section section"
     "footer footer"
   }
-  .wrap-main {
+  /*.wrap-main {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 40px 0px 40px 0px;
-  }
-  .content-one {
+  }*/
+  /*.content-one {
     order: 1;
     flex-grow: 1;
     font-size: .9rem;
@@ -236,7 +236,7 @@ section a:hover {
     width: 3400px;
     order: 2;
     flex-grow: 2;
-  }
+  }*/
   .wrap-section {
     display: flex;
     justify-content: space-between;

@@ -35,9 +35,16 @@ footer {
 /* =======================================
       STYLES
 ========================================= */
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
 
 main {
   text-align: center;
+  border-bottom: 2px solid #e37222;
 }
 
 .wrap-main {
@@ -133,14 +140,75 @@ main img {
   main {
     text-align: left;
   }
+  .wrap-main {
+    padding-left: 5px;
+  }
+  .our-team {
+    text-align: center;
+  }
+  .our-team img {
+    height: 350px;
+    width: 500px;
+  }
+
   .doctor-profile {
     display: flex;
   }
   .doctor-photo {
-    width: 300px;
+    width: 350px;
   }
   .doctor-bio {
     flex: 1;
     margin: 50px 5px 0 5px;
+  }
+  .morgan-profile {
+    display: flex;
+  }
+  .morgan-photo {
+    width: 350px;
+  }
+  .morgan-bio {
+    flex: 1;
+    margin: 50px 5px 0 5px;
+  }
+  .carly-profile {
+    display: flex;
+  }
+  .carly-photo {
+    width: 350px;
+  }
+  .carly-bio {
+    flex: 1;
+    margin: 50px 5px 0 5px;
+  }
+  .shanda-profile {
+    display: flex;
+  }
+  .shanda-photo {
+    width: 350px;
+  }
+  .shanda-bio {
+    flex: 1;
+    margin: 50px 5px 0 5px;
+  }
+  .jordan-profile {
+    display: flex;
+  }
+  .jordan-photo {
+    width: 350px;
+  }
+  .jordan-bio {
+    flex: 1;
+    margin: 97px 5px 0 5px;
+  }
+  .mckenzie-profile {
+    display: flex;
+  }
+  .mckenzie-photo {
+    width: 350px;
+  }
+  .mckenzie-bio {
+    flex: 1;
+    margin: 97px 5px 0 5px;
   }
 }
