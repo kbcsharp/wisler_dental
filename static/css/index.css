@@ -88,7 +88,7 @@ h3 {
 }
 
 main a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato';
 }
 
 main {
@@ -501,8 +501,8 @@ aside h4, .aside-two h4, .aside-three h4 {
     font-size: 2.5rem;
   }
   .name {
-    font-size: 1.5rem;
-    font-family: cursive;
+    font-size: 1.9rem;
+    font-family: 'Dancing Script', cursive;
   }
   .aside-five {
     padding: 0px;
