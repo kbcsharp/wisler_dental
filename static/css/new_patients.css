@@ -57,6 +57,7 @@ footer {
 .wrap-section {
   background-color: #fff;
 }
+
 main {
   height: auto;
   text-align: center;
@@ -219,32 +220,11 @@ section a:hover {
     "section section"
     "footer footer"
   }
-  /*.wrap-main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 40px 0px 40px 0px;
-  }*/
-  /*.content-one {
-    order: 1;
-    flex-grow: 1;
-    font-size: .9rem;
-    margin: 0px 45px 0px 45px;
-  }
-  .content-one-image {
-    height: 400px;
-    width: 3400px;
-    order: 2;
-    flex-grow: 2;
-  }*/
   .wrap-section {
     display: flex;
     justify-content: space-between;
     padding: 40px 0px 40px 0px;
   }
-  /*section {
-    margin-top: 40px;
-  }*/
   .content-four {
     margin-right: 25px;
   }
