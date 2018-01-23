@@ -521,10 +521,12 @@ aside h4, .aside-two h4, .aside-three h4 {
     flex: 1;
   }
   .doctor-note-content p {
+    text-align: left;
     width: 75%;
     margin: 0 auto;
+    word-spacing: .05rem;
   }
   .doctor-note-content h4 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
