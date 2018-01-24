@@ -171,16 +171,6 @@ main img {
     flex: 1;
     margin: 50px 5px 0 5px;
   }
-  .carly-profile {
-    display: flex;
-  }
-  .carly-photo {
-    width: 350px;
-  }
-  .carly-bio {
-    flex: 1;
-    margin: 50px 5px 0 5px;
-  }
   .shanda-profile {
     display: flex;
   }
