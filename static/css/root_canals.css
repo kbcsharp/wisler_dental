@@ -3,16 +3,15 @@
 ========================================= */
 
 .container {
+  background-color: #195477;
   height: fill;
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(400px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+  grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
   grid-template-areas:
   "header"
   "subtitle"
   "main"
-  "aside"
-  "section"
   "footer";
 }
 
@@ -28,17 +27,6 @@ main {
   grid-area: main;
 }
 
-aside {
-  grid-area: aside;
-}
-
-section {
-  grid-area: section;
-  display: grid;
-  align-items: center;
-  grid-column-gap: 15px;
-}
-
 footer {
   grid-area: footer;
 }
@@ -47,7 +35,8 @@ footer {
       STYLES
 ========================================= */
 .subtitle {
-  background-color: white;
+  border-top: 2px solid #e37222;
+  background-color: #dde8f0;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -62,62 +51,13 @@ footer {
 }
 
 main {
-  height: 400px;
-  /*background-image: url("../images/JDSnewpatients.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;*/
-  margin-bottom: 35px;
+
 }
 
-aside {
-  margin: 5px;
-  text-align: center;
-  background-color: #dde8f0;
+.wrap-main {
+  background-color: #fff;
 }
 
-.line1,
-.line2 {
-  margin: 0 auto;
-  width: 60%;
-  border: 1px solid black;
-}
-
-section ul {
-  text-align: left;
-}
-
-section {
-  margin: 5px;
-  text-align: center;
-  background-color: #dde8f0;
-}
-
-section a:link {
-  color: #70c3ce;
-}
-
-section a:visited {
-  color: #70c3ce
-}
-
-section a:hover {
-  color: #195477;
-}
-
-.content-two {
-  margin-bottom: 20px;
-}
-
-.content-three {
-  margin-bottom: 20px;
-}
-
-.content-four {
-  margin-bottom: 20px;
-}
 
 
 /* =======================================
@@ -127,13 +67,11 @@ section a:hover {
 @media (min-width: 575px) {
   .container {
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(400px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
     grid-template-areas:
     "header header"
     "subtitle subtitle"
     "main main"
-    "aside aside"
-    "section section"
     "footer footer"
   }
   .contact-info p{
@@ -145,62 +83,26 @@ section a:hover {
   nav a {
     padding: 5px 8px 5px 8px;
   }
-  aside {
-    margin: 5px 15px 5px 15px;
-  }
-  section {
-    margin: 5px 15px 5px 15px;
-  }
-  footer {
-    text-align: right;
-  }
 }
 
 @media (min-width: 767px) {
-  .subtitle {
-    margin-top: 15px;
-  }
-  .subtitle h2 {
-    font-size: 2.7rem;
-  }
-
-  li {
-    font-size: 1.1rem;
-  }
-  .content-two {
-    grid-area: content-two;
-    grid-column: 1 / 2;
-    grid-row: 4 / 6
-  }
-
-  .content-three {
-    grid-area: content-three;
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-  }
-  .content-four {
-    grid-area: content-four;
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
-  }
   .container {
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(400px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
     grid-template-areas:
     "header header"
     "subtitle subtitle"
     "main main"
-    "aside aside"
-    "section section"
-    "section section"
     "footer footer"
+  }
+  .subtitle h2 {
+    font-size: 2.7rem;
+  }
+  li {
+    font-size: 1.1rem;
   }
 }
 
 @media (min-width: 991px) {
-  .content-two,
-  .content-three,
-  .content-four {
-    padding: 0 15px 0 15px;
-  }
+
 }
