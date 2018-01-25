@@ -3,15 +3,16 @@
 ========================================= */
 
 .container {
+  background-color: #195477;
   height: fill;
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(400px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+  grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
   grid-template-areas:
   "header"
   "subtitle"
   "main"
-  "aside"
+  "crown-info"
   "section"
   "footer";
 }
@@ -28,15 +29,12 @@ main {
   grid-area: main;
 }
 
-aside {
-  grid-area: aside;
+.crown-info {
+  grid-area: crown-info;
 }
 
 section {
   grid-area: section;
-  display: grid;
-  align-items: center;
-  grid-column-gap: 15px;
 }
 
 footer {
@@ -47,7 +45,8 @@ footer {
       STYLES
 ========================================= */
 .subtitle {
-  background-color: white;
+  border-top: 2px solid #e37222;
+  background-color: #dde8f0;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -61,81 +60,73 @@ footer {
   margin: 0;
 }
 
-main {
-  height: 400px;
-  /*background-image: url("../images/JDSnewpatients.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;*/
-  margin-bottom: 35px;
+.wrap-main {
+  text-align: center;
+  background-color: #fff;
+  max-width: 1000px;
 }
 
-aside {
-  margin: 5px;
+.wrap-crown-info {
+  background-color: #fff;
+  max-width: 1000px;
   text-align: center;
-  background-color: #dde8f0;
+}
+
+.crown-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap-crown-info {
+  padding: 45px 0 45px 0;
+  font-size: .71rem;
+}
+
+.wrap-section {
+  background-color: #fff;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.wrap-section ul,
+.wrap-section p {
+  text-align: left;
 }
 
 .line1,
 .line2 {
   margin: 0 auto;
   width: 60%;
-  border: 1px solid black;
+  border: 1px solid #e37222;
 }
 
-section ul {
-  text-align: left;
+.crown-types {
+  padding: 45px 0 45px 0;
+}
+
+.crown-purpose {
+  padding-bottom: 45px;
 }
 
 section {
-  margin: 5px;
-  text-align: center;
-  background-color: #dde8f0;
+  border-bottom: solid 2px #e37222;
 }
-
-section a:link {
-  color: #70c3ce;
-}
-
-section a:visited {
-  color: #70c3ce
-}
-
-section a:hover {
-  color: #195477;
-}
-
-.content-two {
-  margin-bottom: 20px;
-}
-
-.content-three {
-  margin-bottom: 20px;
-}
-
-.content-four {
-  margin-bottom: 20px;
-}
-
 
 /* =======================================
       MEDIA QUERIES
 ========================================= */
 
 @media (min-width: 575px) {
-  .container {
+  /*.container {
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(400px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
     grid-template-areas:
     "header header"
     "subtitle subtitle"
     "main main"
-    "aside aside"
     "section section"
     "footer footer"
-  }
+  }*/
   .contact-info p{
     margin: 0 10px 0 0;
   }
@@ -145,62 +136,52 @@ section a:hover {
   nav a {
     padding: 5px 8px 5px 8px;
   }
-  aside {
-    margin: 5px 15px 5px 15px;
+  .wrap-crown-info {
+    padding: 45px 45px 45px 45px;
+    font-size: .85rem;
   }
-  section {
-    margin: 5px 15px 5px 15px;
-  }
-  footer {
-    text-align: right;
+  .wrap-section p {
+    text-align: left;
   }
 }
 
 @media (min-width: 767px) {
-  .subtitle {
-    margin-top: 15px;
-  }
-  .subtitle h2 {
-    font-size: 2.7rem;
-  }
-
-  li {
-    font-size: 1.1rem;
-  }
-  .content-two {
-    grid-area: content-two;
-    grid-column: 1 / 2;
-    grid-row: 4 / 6
-  }
-
-  .content-three {
-    grid-area: content-three;
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-  }
-  .content-four {
-    grid-area: content-four;
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
-  }
-  .container {
+  /*.container {
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(400px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
     grid-template-areas:
     "header header"
     "subtitle subtitle"
     "main main"
-    "aside aside"
-    "section section"
     "section section"
     "footer footer"
+  }*/
+  .subtitle h2 {
+    font-size: 2.7rem;
+  }
+  li {
+    font-size: 1.1rem;
+  }
+  .crown-image img {
+    height: 400px;
+    width: 600px;
+  }
+  .crown-gif img {
+    height: 250px;
+    width: 450px;
   }
 }
 
 @media (min-width: 991px) {
-  .content-two,
-  .content-three,
-  .content-four {
-    padding: 0 15px 0 15px;
+  .wrap-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .crown-wrapper1 {
+    flex: 1;
+    padding: 0 25px 40px 25px;
+  }
+  .crown-wrapper2 {
+    padding: 0 25px 40px 25px;
   }
 }
