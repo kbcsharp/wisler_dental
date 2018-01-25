@@ -12,6 +12,8 @@
   "header"
   "subtitle"
   "main"
+  "root-canal-info"
+  "section"
   "footer";
 }
 
@@ -25,6 +27,14 @@ header {
 
 main {
   grid-area: main;
+}
+
+.root-canal-info {
+  grid-area: root-canal-info;
+}
+
+section {
+  grid-area: section;
 }
 
 footer {
@@ -50,13 +60,58 @@ footer {
   margin: 0;
 }
 
-main {
-
-}
-
 .wrap-main {
+  text-align: center;
   background-color: #fff;
+  max-width: 1000px;
 }
+
+.wrap-root-canal-info {
+  background-color: #fff;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.root-canal-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap-root-canal-info {
+  padding: 45px 0 45px 0;
+  font-size: .71rem;
+}
+
+.wrap-section {
+  background-color: #fff;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.wrap-section ul,
+.wrap-section p {
+  text-align: left;
+}
+
+.line1,
+.line2 {
+  margin: 0 auto;
+  width: 60%;
+  border: 1px solid #e37222;
+}
+
+.root-canal-needed {
+  padding: 45px 0 45px 0;
+}
+
+.root-canal-benefits {
+  padding-bottom: 45px;
+}
+
+section {
+  border-bottom: solid 2px #e37222;
+}
+
 
 
 
@@ -65,15 +120,16 @@ main {
 ========================================= */
 
 @media (min-width: 575px) {
-  .container {
+  /*.container {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
     grid-template-areas:
     "header header"
     "subtitle subtitle"
     "main main"
+    "section section"
     "footer footer"
-  }
+  }*/
   .contact-info p{
     margin: 0 10px 0 0;
   }
@@ -83,26 +139,52 @@ main {
   nav a {
     padding: 5px 8px 5px 8px;
   }
+  .wrap-root-canal-info {
+    padding: 45px 45px 45px 45px;
+    font-size: .85rem;
+  }
+  .wrap-section p {
+    text-align: left;
+  }
 }
 
 @media (min-width: 767px) {
-  .container {
+  /*.container {
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
     grid-template-areas:
     "header header"
     "subtitle subtitle"
     "main main"
+    "section section"
     "footer footer"
-  }
+  }*/
   .subtitle h2 {
     font-size: 2.7rem;
   }
   li {
     font-size: 1.1rem;
   }
+  .root-canal-image img {
+    height: 400px;
+    width: 600px;
+  }
+  .root-canal-gif img {
+    height: 250px;
+    width: 350px;
+  }
 }
 
 @media (min-width: 991px) {
-
+  .wrap-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .root-canal-wrapper1 {
+    flex: 1;
+    padding: 0 25px 25px 5px;
+  }
+  .root-canal-wrapper2 {
+    padding: 0 5px 25px 25px;
+  }
 }
