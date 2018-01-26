@@ -64,7 +64,6 @@ footer {
   text-align: center;
   background-color: #fff;
   max-width: 1000px;
-  padding-top: 35px;
 }
 
 .wrap-extraction-info {
@@ -196,6 +195,7 @@ section {
     order: 1;
   }
   .extraction-care {
+    text-align: left;
     order: 2;
   }
 }
