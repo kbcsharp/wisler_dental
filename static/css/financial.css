@@ -61,9 +61,11 @@ main {
   margin: 0 auto;
 }
 
+.financial-info {
+  padding-top: 35px;
+}
 .financial-info p {
   margin-top: 0;
-  padding-top: 25px;
 }
 
 .wrap-main p {
@@ -76,7 +78,7 @@ main {
 }
 
 .other-payment-options {
-  padding-bottom: 25px;
+  padding-bottom: 35px;
 }
 /* =======================================
       MEDIA QUERIES
