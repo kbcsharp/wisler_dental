@@ -184,4 +184,7 @@ section {
   .root-canal-wrapper2 {
     padding: 0 25px 40px 25px;
   }
+  .wrap-section {
+    text-align: left;
+  }
 }

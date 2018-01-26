@@ -178,6 +178,7 @@ section {
     justify-content: space-between;
   }
   .crown-wrapper1 {
+    flex: 1;
     padding: 0 25px 40px 25px;
   }
   .crown-wrapper2 {
