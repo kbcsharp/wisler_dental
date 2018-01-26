@@ -126,6 +126,9 @@ main {
   h3 {
     text-align: left;
   }
+  .financial-info p {
+    text-align: center;
+  }
 }
 
 @media (min-width: 991px) {
