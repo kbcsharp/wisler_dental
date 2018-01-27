@@ -7,9 +7,10 @@
   height: fill;
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+  grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
   grid-template-areas:
   "header"
+  "nav"
   "subtitle"
   "main"
   "footer";
@@ -17,6 +18,10 @@
 
 header {
   grid-area: header;
+}
+
+nav {
+  grid-area: nav;
 }
 
 .subtitle {
@@ -117,6 +122,9 @@ main {
     "section section"
     "footer footer"
   }*/
+  .subtitle {
+    border: none;
+  }
   .subtitle h2 {
     font-size: 2.7rem;
   }

@@ -42,9 +42,9 @@ h3 {
   margin: 0;
 }
 
+/*added display: none for now*/
 nav {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  display: none;
 }
 
 img {
@@ -56,43 +56,63 @@ header {
   background-color: #9da7ad;
   /*background-color: #657882;*/
   text-align: center;
-  border-bottom: 7px solid #195477;
+  border-bottom: solid 7px #195477;
+}
+
+.wrap-header {
+  /*display: flex;
+  align-items: center;*/
+}
+
+.nav {
+  /*float: right;*/
+  width: 100%;
 }
 
 .nav-toggle {
   display: block;
+  /*float: right;*/
   height: 120px;
   width: 100%;
   background: url("../images/menu-button-of-three-horizontal-lines.svg") no-repeat 125% center;
   cursor: pointer;
 }
 
-header nav {
+
+
+/*.logo-image,
+.contact-info {
+  flex-basis: auto;
+}*/
+
+/*changed nav to .nav for now to next 5 down*/
+header .nav {
   width: 100%;
   padding: 0;
   margin: 0 auto;
 }
 
-header nav ul {
+header .nav ul {
   overflow: hidden;
   height: 0;
   /*border-top-right-radius: 20px;
   border-top-left-radius: 20px;*/
 }
 
-header nav ul.open {
+header .nav ul.open {
   height: auto;
+  width: 100vw;
 }
 
-header nav ul li {
+header .nav ul li {
   list-style: none;
   text-align: left;
   width: 100%;
   margin: 0;
 }
 
-header nav ul li a {
-  color: #000;
+header .nav ul li a {
+  color: #fff;
   padding: 10px;
   font-size: 1.4rem;
   margin: 0;
@@ -101,16 +121,22 @@ header nav ul li a {
 }
 
 .selected {
-  background-color: #195477;
+  background-color: #e37222;
   border-radius: 5px 15px 5px;
-  color: #70c3ce;
+  /*color: #70c3ce;*/
+  color: #000;
+}
+/*.nav {
+  flex: 1;
+}*/
+.logo-image {
+  float: left;
 }
 
 .logo-image img {
   width: 270px;
   height: 90px;
-  float: left;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 .contact-info {
@@ -130,15 +156,16 @@ header nav ul li a {
   padding: 0 15px 0 0;
 }
 
-nav a:hover {
+/*changed nav to .nav for now for next 2*/
+.nav a:hover {
   color: #70c3ce;
   border-radius: 5px 15px 5px;
-  background-color: #195477;
+  /*background-color: #195477;*/
   transition: all 0.6s ease;
 }
 
-nav a:active {
-  color: #fff;
+.nav a:active {
+  color: #000;
 }
 
 footer {
@@ -171,16 +198,17 @@ footer img {
 
 @media (min-width: 400px) {
   .nav-toggle {
-    background: url("../images/menu-button-of-three-horizontal-lines.svg") no-repeat 110% center;
+    background: url("../images/menu-button-of-three-horizontal-lines.svg") no-repeat 105% center;
   }
 }
 
 @media (min-width: 575px) {
-  header nav ul li {
-    text-align: right;
+  /*changed nav to .nav for just right below for now*/
+  header .nav ul li {
+    text-align: left;
   }
   .nav-toggle {
-    background: url("../images/menu-button-of-three-horizontal-lines.svg") no-repeat 100% center;
+    /*background: url("../images/menu-button-of-three-horizontal-lines.svg") no-repeat 100% right;*/
   }
   .logo-image img {
     width: 330px;
@@ -189,8 +217,20 @@ footer img {
 }
 
 @media (min-width: 767px) {
+
+  /*.wrap-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }*/
+
   p {
     font-size: 1.1rem;
+  }
+
+  header {
+    padding-bottom: 25px;
+    border: none;
   }
 
   .contact-info {
@@ -199,32 +239,54 @@ footer img {
   }
 
   .nav-items {
+    display: inline-block;
     margin: 0;
     padding: 0;
   }
 
-  header nav ul {
+  nav ul {
     /*background-color: #1e3139;*/
     /*background-color: #195477;*/
     text-align: center;
-    height: auto;
+    /*height: auto;*/
     width: 100%;
-    display: inline-flex;
+    /*display: inline-block;*/
   }
 
-  header nav ul li {
+  nav ul li {
     list-style: none;
     text-align: center;
+    display: inline;
     width: 100%;
     margin: 0;
   }
 
-  header nav ul li a {
-    color: black;
-    padding: 10px;
-    font-size: 1rem;
+  nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 15px 10px 15px;
+    font-size: 1.1rem;
     margin: 0;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+
+  nav a:hover {
+    color: #70c3ce;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: block;
+    background-color: #195477;
+    border-bottom: 2px solid #e37222;
   }
 
   .nav-toggle {
