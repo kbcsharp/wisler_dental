@@ -72,7 +72,7 @@ footer {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 h3 {
@@ -80,21 +80,36 @@ h3 {
 }
 
 main {
-  height: 525px;
-  background: url("../images/holiday_express_doctor.png") left bottom / 250px 350px no-repeat,
-              linear-gradient(0deg, #eae7e3, transparent),
+  height: 450px;
+  background: linear-gradient(220deg, /*#eae7e3,*/ #fff, transparent),
               url("../images/DentalOfficeExample.jpg") center / cover;
-  position: relative;
   overflow: hidden;
   text-align: center;
   border-top: 2px solid #e37222;
 }
 
+.wrap-main {
+  position: relative;
+}
+
+.wrap-main img {
+  position: absolute;
+  top: 100px;
+  right: 25%;
+  height: 350px;
+  width: 250px;
+}
+
+/*.wrap-main {
+  position: relative;
+  background: url("../images/holiday_express_doctor.png") left bottom / 250px 350px no-repeat
+}*/
+
 .main-title {
   margin-top: 5px;
 }
 
-.button {
+/*.button {
   margin: auto;
   max-width: 180px;
   background-color: #9da7ad;
@@ -112,7 +127,6 @@ main {
 }
 
 .button:hover {
-  /*color: #70c3ce;*/
   color: #70c3ce;
   background-color: #195477;
   transition: all 0.6s ease;
@@ -120,7 +134,7 @@ main {
 
 .button:active {
   color: #fff;
-}
+}*/
 
 section {
   background-color: #195477;
@@ -283,7 +297,7 @@ aside h4, .aside-two h4, .aside-three h4 {
     "footer footer footer"
   }
   h1 {
-    font-size: 3rem;
+    font-size: 3.4rem;
   }
 
   .contact-info p{
@@ -293,7 +307,9 @@ aside h4, .aside-two h4, .aside-three h4 {
   main {
     direction: rtl;
     text-align: right;
-    height: 450px;
+  }
+  .wrap-main img {
+    right: 58%;
   }
   .main-title {
     margin-right: 25px;
@@ -334,11 +350,14 @@ aside h4, .aside-two h4, .aside-three h4 {
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
-  .button {
+  .wrap-main img {
+    right: 65%;
+  }
+  /*.button {
     margin-right: 200px;
-  }
+  }*/
   section {
     font-size: 1.2rem;
   }
@@ -400,11 +419,14 @@ aside h4, .aside-two h4, .aside-three h4 {
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 4.8rem;
   }
-  .button {
+  .wrap-main img {
+    right: 75%;
+  }
+  /*.button {
     margin-right: 250px;
-  }
+  }*/
   section {
     font-size: 1.5rem;
   }
