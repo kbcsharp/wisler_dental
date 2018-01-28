@@ -116,10 +116,10 @@ header .nav ul li a {
 }
 
 .selected {
-  background-color: #e37222;
-  border-radius: 5px 15px 5px;
+  background-color: #2479ab;
+  border-radius: 5px;
   /*color: #70c3ce;*/
-  color: #000;
+  /*color: #000;*/
 }
 /*.nav {
   flex: 1;
@@ -272,7 +272,9 @@ footer img {
   }
 
   nav a:hover {
-    color: #70c3ce;
+    /*color: #70c3ce;*/
+    background-color: #2479ab;
+    border-radius: 5px;
   }
 
   .nav {
