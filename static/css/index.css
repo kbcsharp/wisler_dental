@@ -90,6 +90,7 @@ main {
               url("../images/DentalOfficeExample.jpg") center / cover;
   overflow: hidden;
   text-align: center;
+  border-top: 2px solid #e37222;
 }
 
 .wrap-main {
@@ -356,6 +357,9 @@ aside h4, .aside-two h4, .aside-three h4 {
 
   h1 {
     font-size: 4rem;
+  }
+  main {
+    border: none;
   }
   .wrap-main img {
     right: 65%;
