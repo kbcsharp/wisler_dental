@@ -174,12 +174,16 @@ section {
     height: 370px;
     width: 450px;
   }
+  .crown-gif {
+    padding-top: 25px;
+  }
 }
 
 @media (min-width: 991px) {
   .wrap-section {
     display: flex;
     justify-content: space-between;
+    padding: 40px 0px 40px 0px;
   }
   .crown-wrapper1 {
     flex: 1;
