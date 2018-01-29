@@ -137,6 +137,9 @@ main {
   .financial-info p {
     text-align: center;
   }
+  .other-payment-options {
+    text-align: left;
+  }
 }
 
 @media (min-width: 991px) {
