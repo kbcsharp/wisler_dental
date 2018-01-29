@@ -112,7 +112,10 @@ main img {
     "section section"
     "footer footer"
   }
-
+  .our-team img {
+    height: 350px;
+    width: 500px;
+  }
   .contact-info p{
     margin: 0 10px 0 0;
   }
@@ -155,10 +158,6 @@ main img {
   }
   .our-team {
     text-align: center;
-  }
-  .our-team img {
-    height: 350px;
-    width: 500px;
   }
 
   .doctor-profile {
