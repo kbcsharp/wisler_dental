@@ -177,33 +177,26 @@ section {
   }
   .extraction-image img {
     height: 400px;
-    width: 600px;
+    width: 700px;
   }
-  .extraction-gif2 img {
-    height: 250px;
-    width: 250px;
+  .extraction-gif img {
+    height: 400px;
+    width: 400px;
   }
-}
-
-@media (min-width: 991px) {
   .wrap-section {
     display: flex;
     justify-content: space-between;
   }
   .extraction-wrapper1 {
-    padding: 0 25px 40px 25px;
-  }
-  .extraction-wrapper2 {
-    display: flex;
-    flex-direction: column;
+    text-align: left;
     flex: 1;
     padding: 0 25px 40px 25px;
   }
-  .extraction-gif {
-    order: 1;
+  .extraction-wrapper2 {
+    padding: 30px 25px 40px 25px;
   }
-  .extraction-care {
-    text-align: left;
-    order: 2;
-  }
+}
+
+@media (min-width: 991px) {
+
 }
