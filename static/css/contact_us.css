@@ -93,7 +93,6 @@ footer {
   text-align: center;
 }
 
-.wrap-section ul,
 .wrap-section p {
   text-align: left;
 }
@@ -117,12 +116,12 @@ section {
   border-bottom: solid 2px #e37222;
 }
 
-#map {
-  height: 500px;
-  width: 500px;
+/*#map {
+  height: 200px;
+  width: 300px;
   margin: 0;
   padding: 0;
-}
+}*/
 
 .underline {
   font-weight: 500;
