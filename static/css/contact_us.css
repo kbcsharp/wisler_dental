@@ -185,6 +185,10 @@ section {
     height: 400px;
     width: 600px;
   }
+  #map {
+    height: 350px;
+    width: 450px;
+  }
 }
 
 @media (min-width: 991px) {
