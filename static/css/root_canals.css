@@ -105,6 +105,10 @@ footer {
   border: 1px solid #e37222;
 }
 
+.root-canal-process {
+  text-align: center;
+  padding-bottom: 15px;
+}
 .root-canal-needed {
   padding: 45px 0 45px 0;
 }
@@ -178,6 +182,9 @@ section {
     height: 250px;
     width: 350px;
   }
+  .root-canal-wrapper2 {
+    text-align: left;
+  }
 }
 
 @media (min-width: 991px) {
@@ -191,7 +198,7 @@ section {
     padding: 0 25px 40px 25px;
   }
   .root-canal-wrapper2 {
-    padding: 0 25px 40px 25px;
+    padding: 30px 25px 40px 70px;
   }
   .wrap-section {
     text-align: left;

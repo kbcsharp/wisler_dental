@@ -216,12 +216,18 @@ section a:hover {
 
 @media (min-width: 991px) {
   .content-two,
-  .content-three, {
-    padding: 0px 150px 20px 0px;
+  .content-three,
+  .content-five {
+    padding: 0px 0px 20px 0px;
   }
 
   .content-four {
-    padding: 0px 0px 20px 150px;
+    padding: 20px 0px 20px 50px;
+    margin-right: 25px;
+  }
+
+  .sub-content-four {
+    text-align: center;
   }
 
   .container {
@@ -239,9 +245,6 @@ section a:hover {
     display: flex;
     justify-content: space-between;
     padding: 40px 0px 40px 0px;
-  }
-  .content-four {
-    margin-right: 25px;
   }
   .new-patient-form-link img {
     padding-bottom: 25px;
