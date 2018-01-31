@@ -108,13 +108,13 @@ main {
   /*position: relative;*/
 }
 
-.wrap-main img {
+/*.wrap-main img {
   position: absolute;
   top: 143px;
   left: -3%;
   height: 325px;
   width: 450px;
-}
+}*/
 
 /* top: 95px, right: 25% h: 350px, width: 250px*/
 
@@ -301,7 +301,9 @@ aside h4, .aside-two h4, .aside-three h4 {
 ========================================= */
 @media (min-width: 455px) {
   .wrap-main {
-    background: url("../images/SeniorSmileTest.jpg") no-repeat 50% 100% / 500px 375px;
+    /*background: url("../images/SeniorSmileTest.jpg") no-repeat 50% 100% / 500px 375px;*/
+    background-position: 50% 100%;
+    background-size: 500px 375px;
     /*background: linear-gradient(220deg, /*#eae7e3,*/ #fff, transparent),
                 url("../images/SeniorSmileTest.jpg") center / cover;*/
     /*overflow: hidden;*/
@@ -309,7 +311,9 @@ aside h4, .aside-two h4, .aside-three h4 {
 }
 @media (min-width: 530px) {
   .wrap-main {
-    background: url("../images/SeniorSmileTest.jpg") no-repeat 0% 100% / 500px 375px;
+    background-position: 0% 100%;
+    background-size: 500px 375px;
+    /*background: url("../images/SeniorSmileTest.jpg") no-repeat 0% 100% / 500px 375px;*/
   }
 }
 
@@ -385,13 +389,13 @@ aside h4, .aside-two h4, .aside-three h4 {
     "aside-five aside-five aside-five"
     "footer footer footer"
   }
-  .wrap-main img {
+  /*.wrap-main img {
     position: absolute;
     top: 120px;
     left: 5%;
     height: 350px;
     width: 475px;
-  }
+  }*/
 
   h1 {
     font-size: 4rem;
@@ -598,6 +602,7 @@ aside h4, .aside-two h4, .aside-three h4 {
 
 @media (min-width: 1140px) {
   .wrap-main {
-    background: url("../images/SeniorSmileTest.jpg") no-repeat 0% 100% / 540px 415px;
+    background-size: 540px 415px;
+    /*background: url("../images/SeniorSmileTest.jpg") no-repeat 0% 100% / 540px 415px;*/
   }
 }
