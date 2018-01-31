@@ -3,6 +3,7 @@
 ========================================= */
 
 .container {
+  background-color: #fff;
   height: fill;
   display: grid;
   grid-template-columns: 1fr;
@@ -74,10 +75,15 @@ footer {
 }
 .main-title {
   font-family: 'Dancing Script', cursive;
+  z-index: 1000;
+}
+
+.main-subtitle {
+  visibility: hidden;
 }
 
 h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: #50b7e3;
 }
 
@@ -86,25 +92,31 @@ h3 {
 }
 
 main {
-  height: 450px;
-  background: linear-gradient(220deg, /*#eae7e3,*/ #fff, transparent),
-              url("../images/DentalOfficeExample2.jpg") center / cover;
-  overflow: hidden;
-  text-align: center;
+  height: 475px;
+  background-color: #fff;
+  /*background: url("../images/SeniorSmileTest.jpg") no-repeat 50% 100% / 450px 325px;*/
+  /*background: linear-gradient(220deg, /*#eae7e3,*/ #fff, transparent),
+              url("../images/SeniorSmileTest.jpg") center / cover;*/
+  /*overflow: hidden;*/
   border-top: 2px solid #e37222;
 }
 
 .wrap-main {
-  position: relative;
+  height: 475px;
+  background: url("../images/SeniorSmileTest.jpg") no-repeat 50% 100% / 450px 325px;
+  text-align: center;
+  /*position: relative;*/
 }
 
 .wrap-main img {
   position: absolute;
-  top: 100px;
-  right: 25%;
-  height: 350px;
-  width: 250px;
+  top: 143px;
+  left: -3%;
+  height: 325px;
+  width: 450px;
 }
+
+/* top: 95px, right: 25% h: 350px, width: 250px*/
 
 /*.wrap-main {
   position: relative;
@@ -287,6 +299,19 @@ aside h4, .aside-two h4, .aside-three h4 {
 /* =======================================
       MEDIA QUERIES
 ========================================= */
+@media (min-width: 455px) {
+  .wrap-main {
+    background: url("../images/SeniorSmileTest.jpg") no-repeat 50% 100% / 500px 375px;
+    /*background: linear-gradient(220deg, /*#eae7e3,*/ #fff, transparent),
+                url("../images/SeniorSmileTest.jpg") center / cover;*/
+    /*overflow: hidden;*/
+  }
+}
+@media (min-width: 530px) {
+  .wrap-main {
+    background: url("../images/SeniorSmileTest.jpg") no-repeat 0% 100% / 500px 375px;
+  }
+}
 
 @media (min-width: 575px) {
   .container {
@@ -309,14 +334,19 @@ aside h4, .aside-two h4, .aside-three h4 {
   .contact-info p{
     margin: 0 10px 0 0;
   }
-
   main {
-    direction: rtl;
+    /*background: url("../images/SeniorSmileTest.jpg") no-repeat left bottom / 500px 375px;*/
+    /*background: linear-gradient(220deg, /*#eae7e3,*/ #fff, transparent),
+                url("../images/SeniorSmileTest.jpg") center / cover;*/
+    /*overflow: hidden;*/
+  }
+
+  .wrap-main {
     text-align: right;
   }
-  .wrap-main img {
+  /*.wrap-main img {
     right: 58%;
-  }
+  }*/
   .main-title {
     margin-right: 25px;
   }
@@ -355,6 +385,13 @@ aside h4, .aside-two h4, .aside-three h4 {
     "aside-five aside-five aside-five"
     "footer footer footer"
   }
+  .wrap-main img {
+    position: absolute;
+    top: 120px;
+    left: 5%;
+    height: 350px;
+    width: 475px;
+  }
 
   h1 {
     font-size: 4rem;
@@ -362,9 +399,9 @@ aside h4, .aside-two h4, .aside-three h4 {
   main {
     border: none;
   }
-  .wrap-main img {
+  /*.wrap-main img {
     right: 65%;
-  }
+  }*/
   /*.button {
     margin-right: 200px;
   }*/
@@ -432,9 +469,16 @@ aside h4, .aside-two h4, .aside-three h4 {
   h1 {
     font-size: 4.8rem;
   }
-  .wrap-main img {
-    right: 75%;
+  .main-subtitle {
+    visibility: visible;
+    margin-right: 25px;
+    font-size: 1.75rem;
+    font-style: italic;
   }
+
+  /*.wrap-main img {
+    right: 75%;
+  }*/
   /*.button {
     margin-right: 250px;
   }*/
@@ -549,5 +593,11 @@ aside h4, .aside-two h4, .aside-three h4 {
   }
   .doctor-note-content h4 {
     font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1140px) {
+  .wrap-main {
+    background: url("../images/SeniorSmileTest.jpg") no-repeat 0% 100% / 540px 415px;
   }
 }
