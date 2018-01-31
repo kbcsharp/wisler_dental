@@ -98,10 +98,10 @@ main {
   /*background: linear-gradient(220deg, /*#eae7e3,*/ #fff, transparent),
               url("../images/SeniorSmileTest.jpg") center / cover;*/
   /*overflow: hidden;*/
-  border-top: 2px solid #e37222;
 }
 
 .wrap-main {
+  border-top: 2px solid #e37222;
   height: 475px;
   background: url("../images/SeniorSmileTest.jpg") no-repeat 50% 100% / 450px 325px;
   text-align: center;
@@ -397,11 +397,12 @@ aside h4, .aside-two h4, .aside-three h4 {
     width: 475px;
   }*/
 
+  .wrap-main {
+    border: none;
+  }
+
   h1 {
     font-size: 4rem;
-  }
-  main {
-    border: none;
   }
   /*.wrap-main img {
     right: 65%;
