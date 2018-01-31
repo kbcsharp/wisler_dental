@@ -3,6 +3,6 @@ $(document).ready(function() {
     classToAdd: "visible animated fadeIn",
     });
   $('.bio-content').addClass("hidden").viewportChecker({
-    classToAdd: "visible animated slideInRight",
+    classToAdd: "visible animated fadeInRight",
     });
 });
