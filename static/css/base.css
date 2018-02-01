@@ -53,7 +53,8 @@ img {
 
 header {
   padding-top: 20px;
-  background-color: #9da7ad;
+  /*background-color: #9da7ad;*/
+  background-color: #fff;
   /*background-color: #657882;*/
   text-align: center;
   border-bottom: solid 7px #195477;
@@ -166,7 +167,8 @@ header .nav ul li a {
 footer {
   border-top: 7px solid #195477;
   padding-top: 25px;
-  background-color: #9da7ad;
+  /*background-color: #9da7ad;*/
+  background-color: #fff;
   /*background-color: #657882;*/
   text-align: center;
   color: #000;
@@ -180,7 +182,7 @@ footer img {
 }
 
 .footer-content-one {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #e37222;
 }
 
 .footer-content-three p {
