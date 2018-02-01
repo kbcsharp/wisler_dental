@@ -53,8 +53,7 @@ img {
 
 header {
   padding-top: 20px;
-  /*background-color: #9da7ad;*/
-  background-color: #fff;
+  background-color: #9da7ad;
   /*background-color: #657882;*/
   text-align: center;
   border-bottom: solid 7px #195477;
@@ -226,6 +225,7 @@ footer img {
   }
 
   header {
+    background-color: #fff;
     padding-bottom: 25px;
     border: none;
   }
