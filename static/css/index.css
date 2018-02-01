@@ -410,6 +410,13 @@ aside h4, .aside-two h4, .aside-three h4 {
   .wrap-main {
     border: none;
   }
+  .main-subtitle {
+    visibility: visible;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 1.15rem;
+  }
 
   h1 {
     font-size: 4rem;
@@ -486,12 +493,8 @@ aside h4, .aside-two h4, .aside-three h4 {
     margin-bottom: 0;
   }
   .main-subtitle {
-    visibility: visible;
-    margin-right: 25px;
     font-size: 1.75rem;
     /*font-style: italic;*/
-    margin-top: 20px;
-    margin-bottom: 0;
   }
 
   /*.wrap-main img {
