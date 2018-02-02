@@ -229,6 +229,9 @@ section a:hover {
   .sub-content-four {
     text-align: center;
   }
+  .sub-content-four p {
+    text-align: left;
+  }
 
   .container {
     grid-template-columns: 1fr 1fr;
