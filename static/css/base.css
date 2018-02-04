@@ -188,6 +188,20 @@ footer img {
   font-size: .8rem;
 }
 
+.links {
+  margin-bottom: 10px;
+}
+
+.links img {
+  height: 50px;
+  width: 50px;
+  margin: 0 15px 0 15px;
+  border: solid 3px #fff;
+  border-radius: 25%;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #000;
+}
+
 /* =======================================
       MEDIA QUERIES
 ========================================= */
@@ -209,6 +223,9 @@ footer img {
   .logo-image img {
     width: 330px;
     height: 110px;
+  }
+  .links {
+    display: none;
   }
 }
 
