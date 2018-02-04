@@ -1,0 +1,132 @@
+/* =======================================
+      GRID LAYOUT
+========================================= */
+
+.container {
+  background-color: #195477;
+  height: fill;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(50px, auto) minmax(0px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+  grid-template-areas:
+  "header"
+  "nav"
+  "subtitle"
+  "main"
+  "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.subtitle {
+  grid-area: subtitle;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* =======================================
+      STYLES
+========================================= */
+
+.subtitle {
+  border-top: 2px solid #e37222;
+  background-color: #dde8f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.subtitle h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.75rem;
+  /*color: #e37222;*/
+  color: #195477;
+  margin: 0;
+}
+
+main {
+  border-bottom: 2px solid #e37222;
+}
+.wrap-main {
+  text-align: left;
+  background-color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.wrap-main p {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.our-services-paragraph {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.our-services-links {
+  padding-bottom: 25px;
+}
+
+.our-services-links a {
+  text-decoration: none;
+  padding: 5px;
+  color: #70c3ce;
+}
+
+.our-services-links a:hover {
+  color: #e37222;
+}
+
+
+
+/* =======================================
+      MEDIA QUERIES
+========================================= */
+@media (min-width: 575px) {
+  .subtitle h2 {
+    font-size: 2.2rem;
+  }
+  .contact-info p{
+    margin: 0 10px 0 0;
+  }
+  nav a {
+    padding: 5px 8px 5px 8px;
+  }
+  .wrap-main {
+    padding-left: 10px;
+    padding-right: 20%;
+  }
+}
+
+@media (min-width: 767px) {
+  .subtitle {
+    border: none;
+  }
+  .subtitle h2 {
+    font-size: 2.7rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+  h3 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 991px) {
+  .wrap-main {
+    padding-right: 30%;
+  }
+}
