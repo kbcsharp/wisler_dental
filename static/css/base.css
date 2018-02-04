@@ -231,7 +231,8 @@ footer img {
     height: 110px;
   }
   .links {
-    display: none;
+    text-align: right;
+    margin-right: 20px;
   }
 }
 
@@ -316,6 +317,9 @@ footer img {
   }
 
   .nav-toggle {
+    display: none;
+  }
+  .links {
     display: none;
   }
 
