@@ -157,8 +157,8 @@ header .nav ul li a {
 }
 
 .contact-info img:active {
-  padding: 5px;
-  background-color: #195477;
+  padding: 2px;
+  box-shadow: inset 1px 1px 4px #195477;
 }
 
 /*changed nav to .nav for now for next 2*/
@@ -214,8 +214,8 @@ footer img {
 }
 
 .links img:active {
-  padding: 3px;
-  background-color: #195477;
+  padding: 2px;
+  box-shadow: inset 1px 1px 4px #195477;
 }
 
 /* =======================================
