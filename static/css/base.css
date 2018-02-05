@@ -187,12 +187,10 @@ footer {
 footer img {
   padding: 5px;
   vertical-align: middle;
-  /*height: 50px;
-  width: 50px;*/
 }
 
 .footer-content-one {
-  border-bottom: 2px solid #e37222;
+  border-bottom: 3px solid #2479ab;
 }
 
 .footer-content-three p {

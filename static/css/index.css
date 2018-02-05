@@ -562,6 +562,7 @@ aside h4, .aside-two h4, .aside-three h4 {
   .our-team-content {
     flex: 1;
     margin-left: 20px;
+    margin-right: 40px;
   }
   .our-team-photo img {
     height: 375px;
