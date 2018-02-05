@@ -162,15 +162,16 @@ header .nav ul li a {
 }
 
 /*changed nav to .nav for now for next 2*/
-.nav a:hover {
-  color: #70c3ce;
-  border-radius: 5px 15px 5px;
+.nav-items a:hover {
+  /*color: #70c3ce;*/
+  background-color: #2479ab;
+  border-radius: 5px;
   /*background-color: #195477;*/
   transition: all 0.6s ease;
 }
 
-.nav a:active {
-  color: #000;
+.nav-items a:active {
+  color: #70c3ce;
 }
 
 footer {
