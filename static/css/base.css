@@ -129,8 +129,8 @@ header .nav ul li a {
 }
 
 .logo-image img {
-  width: 270px;
-  height: 90px;
+  width: 269px;
+  height: 105px;
   /*margin-bottom: 20px;*/
 }
 
@@ -236,8 +236,8 @@ footer img {
     /*background: url("../images/menu-button-of-three-horizontal-lines.svg") no-repeat 100% right;*/
   }
   .logo-image img {
-    width: 330px;
-    height: 110px;
+    width: 333px;
+    height: 130px;
   }
   .links {
     text-align: right;
@@ -336,8 +336,8 @@ footer img {
 
 @media (min-width: 991px) {
   .logo-image img {
-    width: 375px;
-    height: 135px;
+    width: 371px;
+    height: 145px;
   }
   .contact-info {
     margin-top: 15px;
