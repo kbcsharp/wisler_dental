@@ -127,6 +127,9 @@ section {
   font-weight: 500;
   text-decoration: underline;
 }
+.x-rays {
+  margin-top: 125px;
+}
 
 /* =======================================
       MEDIA QUERIES
@@ -189,6 +192,12 @@ section {
     height: 350px;
     width: 450px;
   }
+  .contact-us-wrapper1 {
+    padding: 0 25px 40px 25px;
+  }
+  .contact-us-wrapper2 {
+    padding: 45px 25px 40px 25px;
+  }
 }
 
 @media (min-width: 991px) {
@@ -196,12 +205,12 @@ section {
     display: flex;
     justify-content: space-between;
   }
-  .contact-us-wrapper1 {
+  /*.contact-us-wrapper1 {
     padding: 0 25px 40px 25px;
   }
   .contact-us-wrapper2 {
     padding: 45px 25px 40px 25px;
-  }
+  }*/
   .wrap-section {
     text-align: left;
   }
