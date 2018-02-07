@@ -68,9 +68,18 @@ main {
 
 .financial-info {
   padding-top: 35px;
+  padding-bottom: 30px;
 }
 .financial-info p {
   margin-top: 0;
+}
+
+.insurance {
+  padding-bottom: 30px;
+}
+
+.third-party-financing {
+  padding-bottom: 30px;
 }
 
 .wrap-main p {
