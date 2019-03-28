@@ -63,6 +63,11 @@ main {
 .wrap-main {
 	text-align: center;
 	background-color: #fff;
+	/* background-color: #f8ecc2; */
+	/* background-color: #cf3d4e; */
+	background-color: #d13e4c;
+	background-color: #ce505d;
+	/* color: darkslategray; */
 	max-width: 1000px;
 	margin: 0 auto;
 }
@@ -228,5 +233,11 @@ h6 {
 	.other-payment-options {
 		margin-left: 10px;
 		margin-right: 10px;
+	}
+	main {
+		margin-top: 25px;
+	}
+	.wrap-main {
+		border-radius: 5px;
 	}
 }
