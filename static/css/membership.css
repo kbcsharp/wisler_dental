@@ -1,0 +1,232 @@
+/* =======================================
+      GRID LAYOUT
+========================================= */
+
+.container {
+	background-color: #195477;
+	height: fill;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: minmax(50px, auto) minmax(0px, auto) minmax(50px, auto)
+		minmax(50px, auto) minmax(50px, auto);
+	grid-template-areas:
+		"header"
+		"nav"
+		"subtitle"
+		"main"
+		"footer";
+}
+
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+}
+
+.subtitle {
+	grid-area: subtitle;
+}
+
+main {
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}
+
+/* =======================================
+        STYLES
+  ========================================= */
+
+.subtitle {
+	border-top: 2px solid #e37222;
+	background-color: #dde8f0;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.subtitle h2 {
+	font-family: "Dancing Script", cursive;
+	font-size: 1.75rem;
+	/*color: #e37222;*/
+	color: #195477;
+	margin: 0;
+}
+
+main {
+	border-bottom: 2px solid #e37222;
+}
+.wrap-main {
+	text-align: center;
+	background-color: #fff;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.see-plans-button {
+	width: 140px;
+	height: 50px;
+  /* margin-bottom: 5px;
+  font-size: 1.5em;
+  border: 3px solid whitesmoke;
+  border-radius: 5px;
+  background: #52b7e0;
+  color: white;
+  transition: all ease-out .6s;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); */
+	border-radius: 5px;
+	background-color: #2479ab;
+	color: white;
+	transition: all ease 0.4s;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	padding: 5px;
+	cursor: pointer;
+}
+.see-plans-button:hover {
+  /* border: 3px solid #52b7e0; 
+  background: white;
+	color: #52b7e0; */
+	background-color: lightgray;
+	border: solid 1px #2479ab;
+	color: #2479ab;
+}
+
+.signup-button {
+	border-radius: 5px;
+	background-color: #2479ab;
+	color: white;
+	transition: all ease 0.4s;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	padding: 5px;
+	cursor: pointer;
+}
+.signup-button:hover {
+	background-color: lightgray;
+	border: solid 1px #2479ab;
+	color: #2479ab;
+}
+
+.underline {
+	text-decoration: underline;
+}
+.bold {
+	font-weight: bold;
+}
+
+.membership-info {
+	padding-top: 35px;
+	padding-bottom: 30px;
+}
+.membership-info p {
+	margin-top: 0;
+}
+li {
+	text-align: left;
+}
+h6 {
+	font-size: 1rem;
+	text-align: left;
+}
+
+.insurance {
+	padding-bottom: 30px;
+}
+
+.third-party-financing {
+	padding-bottom: 30px;
+}
+
+.wrap-main p {
+	/* text-align: left; */
+	font-size: 1rem;
+}
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+
+.other-payment-options ul {
+	text-align: left;
+}
+
+.other-payment-options {
+	padding-bottom: 35px;
+}
+/* =======================================
+        MEDIA QUERIES
+  ========================================= */
+
+@media (min-width: 575px) {
+	/*.container {
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+      grid-template-areas:
+      "header header"
+      "subtitle subtitle"
+      "main main"
+      "section section"
+      "footer footer"
+    }*/
+	.contact-info p {
+		margin: 0 10px 0 0;
+	}
+	.subtitle h2 {
+		font-size: 2.2rem;
+	}
+	nav a {
+		padding: 5px 8px 5px 8px;
+	}
+}
+
+@media (min-width: 767px) {
+	/*.container {
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+      grid-template-areas:
+      "header header"
+      "subtitle subtitle"
+      "main main"
+      "section section"
+      "footer footer"
+    }*/
+	.subtitle {
+		border: none;
+	}
+	.subtitle h2 {
+		font-size: 2.7rem;
+	}
+	li {
+		font-size: 1rem;
+	}
+	h3 {
+		text-align: left;
+	}
+	h4 {
+		font-size: 1.3rem;
+	}
+	.question {
+		font-size: 1.2rem;
+	}
+	/* .financial-info p {
+		text-align: center;
+	} */
+	.other-payment-options {
+		text-align: left;
+	}
+}
+
+@media (min-width: 991px) {
+	.membership-info,
+	.insurance,
+	.third-party-financing,
+	.other-payment-options {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
