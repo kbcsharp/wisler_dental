@@ -139,17 +139,18 @@ main {
 .pre-main-button {
   margin-bottom: 5px;
   font-size: 1.5em;
-  border: 3px solid whitesmoke;
+  border: 3px solid black;
   border-radius: 5px;
-  background: #52b7e0;
-  color: white;
+  /* background: #52b7e0; */
+  background: #d13e4c;
+  color: black;
   transition: all ease-out .6s;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 .pre-main-button:hover {
-  border: 3px solid #52b7e0; 
+  border: 3px solid #d13e4c; 
   background: white;
-  color: #52b7e0;
+  color: #d13e4c;
   cursor: pointer;
 }
 
@@ -469,17 +470,17 @@ aside h4, .aside-two h4, .aside-three h4 {
     font-size: 1.15rem;
   }
   .main-button {
-    border: 3px solid whitesmoke;
+    border: 3px solid black;
     border-radius: 5px;
-    background: #52b7e0;
-    color: white;
+    background: #d13e4c;
+    color: black;
     transition: all ease-out .6s;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   }
   .main-button:hover {
-    border: 3px solid #52b7e0; 
+    border: 3px solid #d13e4c; 
     background: white;
-    color: #52b7e0;
+    color: #d13e4c;
     cursor: pointer;
 
   }

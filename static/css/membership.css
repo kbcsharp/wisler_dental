@@ -61,7 +61,7 @@ main {
 	border-bottom: 2px solid #e37222;
 }
 .wrap-main {
-	text-align: center;
+	/* text-align: center; */
 	background-color: #fff;
 	/* background-color: #f8ecc2; */
 	/* background-color: #cf3d4e; */
@@ -99,6 +99,10 @@ main {
 	background-color: lightgray;
 	border: solid 1px #2479ab;
 	color: #2479ab;
+}
+
+.see-plans-div {
+	margin-bottom: 15px;
 }
 
 .signup-button {
