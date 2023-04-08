@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('.wrap-aside').addClass("hidden").viewportChecker({
-    classToAdd: "visible animated fadeInUp",
+    classToAdd: "visible animated longerDuration fadeIn",
     });
   $('.wrap-aside-four').addClass("hidden").viewportChecker({
     classToAdd: "visible animated bounceInLeft",
