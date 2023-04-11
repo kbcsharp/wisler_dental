@@ -3,7 +3,8 @@
 ========================================= */
 
 .container {
-  background-color: #195477;
+  /* background-color: #195477; */
+  background-color: #fff;
   height: fill;
   display: grid;
   grid-template-columns: 1fr;
@@ -114,7 +115,7 @@ footer {
 }
 
 section {
-  border-bottom: solid 2px #e37222;
+  /* border-bottom: solid 2px #e37222; */
 }
 
 .extraction-gif img {

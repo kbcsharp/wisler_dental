@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  $('.wrap-section').slideDown(1000);
+  $('.wrap-section').slideDown(1200);
 });

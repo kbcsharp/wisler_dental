@@ -7,11 +7,11 @@
   height: fill;
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(50px, auto) minmax(0px, auto) minmax(25px, auto) minmax(400px, auto) minmax(375px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(350px, auto) minmax(350px, auto) minmax(200px, auto);
+  grid-auto-rows: minmax(50px, auto) minmax(400px, auto) minmax(375px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(350px, auto) minmax(350px, auto) minmax(200px, auto);
   grid-template-areas:
   "header"
-  "nav"
-  "aside-six"
+  /* "nav" */
+  /* "aside-six" */
   "main"
   "section"
   "aside"
@@ -110,7 +110,8 @@ main {
 }
 
 .wrap-main {
-  border-top: 2px solid #e37222;
+  /* border-top: 2px solid #e37222; */
+  border-top: 3px solid #195477;
   height: 475px;
   background: url("../images/SeniorSmileTest.jpg") no-repeat 50% 100% / 450px 325px;
   text-align: center;
@@ -133,7 +134,8 @@ main {
 }*/
 
 .main-title {
-  margin-top: 5px;
+  padding-top: 5px;
+  margin-top: 0;
 }
 
 .pre-main-button {
@@ -371,10 +373,10 @@ aside h4, .aside-two h4, .aside-three h4 {
 @media (min-width: 575px) {
   .container {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(50px, auto) minmax(35px, auto) minmax(400px, auto) minmax(375px, auto) minmax(50px, auto) minmax(350px, auto) minmax(350px, auto) minmax(350px, auto) minmax(200px, auto);
+    grid-auto-rows: minmax(50px, auto) minmax(400px, auto) minmax(375px, auto) minmax(50px, auto) minmax(350px, auto) minmax(350px, auto) minmax(350px, auto) minmax(200px, auto);
     grid-template-areas:
     "header header header"
-    "aside-six aside-six aside-six"
+    /* "aside-six aside-six aside-six" */
     "main main main"
     "section section section"
     "aside aside aside"
@@ -698,5 +700,8 @@ aside h4, .aside-two h4, .aside-three h4 {
   .wrap-main {
     background-size: 540px 415px;
     /*background: url("../images/SeniorSmileTest.jpg") no-repeat 0% 100% / 540px 415px;*/
+  }
+  .main-title {
+    padding-top: 35px;
   }
 }

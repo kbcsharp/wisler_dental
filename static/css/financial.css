@@ -3,7 +3,8 @@
 ========================================= */
 
 .container {
-  background-color: #195477;
+  /* background-color: #195477; */
+  background-color: #fff;
   height: fill;
   display: grid;
   grid-template-columns: 1fr;
@@ -57,7 +58,7 @@ footer {
 }
 
 main {
-  border-bottom: 2px solid #e37222;
+  /* border-bottom: 2px solid #e37222; */
 }
 .wrap-main {
   text-align: center;
